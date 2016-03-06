@@ -13,3 +13,8 @@ require get_template_directory() . '/functions/enqueue_scripts.php';
  * Widgets
  */
 require get_template_directory() . '/functions/widgets.php';
+
+/**
+ * Custom Post Types
+ */
+require get_template_directory() . '/functions/custom_post_types.php';
