@@ -1,7 +1,9 @@
 <?php
 get_header();
-the_post();
-echo the_content();
+
+$snippet = get_content_snippet( 13 );
+echo '<h2>' . $snippet['title'] . '</h2>';
+echo $snippet['content'];
 
 // Test FAQs
 // WP_Query arguments
