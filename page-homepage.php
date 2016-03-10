@@ -1,25 +1,71 @@
 <?php
 get_header();
+?>
+<div class="container">
 
-// About Lincoln LUG
-content_snippet( 13 );
+<div class="row">
+	<div class="col-md-4">
+		<?php
+		// LOGO
+		?>
+	</div>
 
-// TODO Next Meeting
+	<div class="col-md-7 col-md-offset-1">
+		<?php
+		// About Lincoln LUG
+		content_snippet( 13 );
+		?>
+	</div>
+</div>
 
-// Location & map
-content_snippet( 15 );
+<div class="row">
+	<div class="col-md-6">
+		<?php
+		// TODO Next Meeting
+		?>
+	</div>
 
-// IRC info
-content_snippet( 14 );
+	<div class="col-md-5 col-md-offset-1">
+		<?php
+		// Location & map
+		content_snippet( 15 );
+		?>
+	</div>
+</div>
 
-// FAQs
-content_snippet( 16 );
+<div class="row">
+	<div class="col-md-4">
+		<?php
+		// IRC info
+		content_snippet( 14 );
+		?>
+	</div>
 
-// Social code
-content_snippet( 18 );
+	<div class="col-md-7 col-md-offset-1">
+		<?php
+		// FAQs
+		content_snippet( 16 );
+		?>
+	</div>
+</div>
 
-// Copyleft notice
-content_snippet( 19 );
+<div class="row">
+	<div class="col-md-6">
+		<?php
+		// Social code
+		content_snippet( 18 );
+		?>
+	</div>
 
-get_sidebar();
+	<div class="col-md-6">
+		<?php
+		// Copyleft
+		content_snippet( 19 );
+		?>
+	</div>
+</div>
+
+</div>
+<?php
 get_footer();
+?>
