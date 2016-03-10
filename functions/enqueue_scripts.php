@@ -13,7 +13,6 @@ function llug_enqueue_scripts()
     /**
      * Default Scripts
      */
-    wp_enqueue_script( 'modernizr_js', get_template_directory_uri() . '/js/vendor/modernizr-2.8.3.min.js', array(), false, false );
     wp_enqueue_script( 'jquery_js', get_template_directory_uri() . '/js/vendor/jquery-1.11.3.min.js', array(), false, true );
     wp_enqueue_script( 'jquery_plugins', get_template_directory_uri() . '/js/vendor/jquery.plugins.combined.js', array(), false, true );
     wp_enqueue_script( 'llug_js', get_template_directory_uri() . '/js/llug.js', array(), false, true );
