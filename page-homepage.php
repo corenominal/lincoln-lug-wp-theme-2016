@@ -1,38 +1,25 @@
 <?php
 get_header();
 
-$snippet = get_content_snippet( 13 );
-echo '<h2>' . $snippet['title'] . '</h2>';
-echo $snippet['content'];
+// About Lincoln LUG
+content_snippet( 13 );
 
-// Test FAQs
-// WP_Query arguments
-$args = array (
-	'post_type'              => array( 'faq' ),
-	'post_status'            => array( 'published' ),
-	'posts_per_page'         => '100',
-	'order'                  => 'ASC',
-	'orderby'                => 'date',
-);
+// TODO Next Meeting
 
-// The Query
-$query = new WP_Query( $args );
+// Location & map
+content_snippet( 15 );
 
-// The Loop
-if ( $query->have_posts() ) {
-	while ( $query->have_posts() ) {
-		$query->the_post();
-		echo '<li>';
-		echo the_title();
-		echo the_content();
-		echo '</li>';
-	}
-} else {
-	// no posts found
-}
+// IRC info
+content_snippet( 14 );
 
-// Restore original Post Data
-wp_reset_postdata();
+// FAQs
+content_snippet( 16 );
+
+// Social code
+content_snippet( 18 );
+
+// Copyleft notice
+content_snippet( 19 );
 
 get_sidebar();
 get_footer();

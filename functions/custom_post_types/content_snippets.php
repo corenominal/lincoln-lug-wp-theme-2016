@@ -85,3 +85,31 @@ function get_content_snippet( $id )
 
 	wp_reset_postdata();
 }
+
+/**
+ * Return array of the content snippet to page template
+ */
+function content_snippet( $id )
+{
+
+	$data['content'] = '<p>No snippet body.</p>';
+
+	$args = array (
+		'p'                      => $id,
+		'post_type'              => array( 'content_snippet' ),
+		'post_status'            => array( 'published' ),
+	);
+
+	$query = new WP_Query( $args );
+
+	if ( $query->have_posts() )
+	{
+		while ( $query->have_posts() )
+		{
+			$query->the_post();
+			the_content();
+		}
+	}
+
+	wp_reset_postdata();
+}
