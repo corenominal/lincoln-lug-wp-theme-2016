@@ -1,6 +1,13 @@
 /**
  * Google Maps - fit container
  */
+.google-map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 75%;
+  position: relative;
+}
+
 .google-map iframe {
 	height: 100% !important;
 	left: 0;

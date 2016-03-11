@@ -13,7 +13,7 @@ get_header();
 	<div class="col-md-7 col-md-offset-1">
 		<?php
 		// About Lincoln LUG
-		content_snippet( 13 );
+		iewp_content_snippet( 13 );
 		?>
 	</div>
 </div>
@@ -28,7 +28,7 @@ get_header();
 	<div class="col-md-5 col-md-offset-1">
 		<?php
 		// Location & map
-		content_snippet( 15 );
+		iewp_content_snippet( 15 );
 		?>
 	</div>
 </div>
@@ -37,14 +37,14 @@ get_header();
 	<div class="col-md-4">
 		<?php
 		// IRC info
-		content_snippet( 14 );
+		iewp_content_snippet( 14 );
 		?>
 	</div>
 
 	<div class="col-md-7 col-md-offset-1">
 		<?php
 		// FAQs
-		content_snippet( 16 );
+		iewp_content_snippet( 16 );
 		?>
 	</div>
 </div>
@@ -53,14 +53,14 @@ get_header();
 	<div class="col-md-6">
 		<?php
 		// Social code
-		content_snippet( 18 );
+		iewp_content_snippet( 18 );
 		?>
 	</div>
 
 	<div class="col-md-6">
 		<?php
 		// Copyleft
-		content_snippet( 19 );
+		iewp_content_snippet( 19 );
 		?>
 	</div>
 </div>
