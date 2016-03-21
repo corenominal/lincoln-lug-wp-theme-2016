@@ -18,20 +18,59 @@ get_header();
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-md-6">
-		<?php
-		// TODO Next Meeting
-		?>
-	</div>
 
-	<div class="col-md-5 col-md-offset-1">
-		<?php
-		// Location & map
-		iewp_content_snippet( 15 );
+<?php
+// Show latest meeting
+$args = array (
+	'post_type'              => array( 'lug_meeting' ),
+	'post_status'            => array( 'published' ),
+	'posts_per_page'		 => 1, 
+);
+$query = new WP_Query( $args );
+if ( $query->have_posts() ) {
+	while ( $query->have_posts() ) {
+		$query->the_post();
 		?>
-	</div>
-</div>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<h2><i class="fa fa-calendar"></i> Next Meeting</h2>
+				<?php
+				// Post meta
+				$meta = iewp_lug_meeting_get_post_meta( $post->ID );
+				echo '<h2>' . date( 'l jS F G:i', $meta['startdate_timestamp'] ) . '</h2>';
+				the_content();
+				echo '<p><strong>Venue:</strong><br>';
+				if( $meta['venue_website'] != '' )
+				{
+					echo '<a href="' . $meta['venue_website'] . '" target="_blank">' . $meta['venue_name'] . '</a><br>';
+				}
+				else
+				{
+					echo $meta['venue_name'] . '<br>';
+				}
+				echo $meta['venue_address_street'] . ', ' . $meta['venue_address_city'] . '<br>';
+				echo $meta['venue_address_postcode'] . '</p>';
+
+				// Structured data
+				echo iewp_lug_meeting_structured_data( $post->ID );
+				?>
+			</div>
+
+			<div class="col-md-5 col-md-offset-1">
+				<h2><i class="fa fa-map"></i> Location</h2>
+				<a href="https://maps.google.com/maps?q=<?php echo $meta['venue_address_postcode'] ?>" target="_blank">
+				<img src="https://maps.google.com/maps/api/staticmap?center=<?php echo $meta['venue_address_postcode'] ?>&zoom=12&size=600x300&maptype=roadmap&markers=color:ORANGE|label:A|<?php echo $meta['venue_address_postcode'] ?>&scale=2&sensor=false " alt="Lincoln LUG meeting location">
+				</a>
+			</div>
+
+		</div>
+		<?php
+	}
+}
+// Reset the loop
+wp_reset_postdata();
+?>
 
 <div class="row">
 	<div class="col-md-4">
