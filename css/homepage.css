@@ -1,0 +1,29 @@
+.container-dark,
+.container-light {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.container-dark {
+	color: #fff;
+	background: #111414;
+}
+
+.container-light {
+	color: #111414;
+	background: #ffeb3b;
+}
+
+.faqs {
+	list-style-type: decimal;
+}
+
+.faqs li {
+	margin-left: 20px;
+}
+
+.faqs li strong {
+	font-size: 110%;
+	display: block;
+	margin-bottom: 16px;
+}
