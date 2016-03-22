@@ -32,7 +32,7 @@ if ( $query->have_posts() ) {
 		$query->the_post();
 		?>
 		<div class="row">
-			
+
 			<div class="col-md-6">
 				<h2><i class="fa fa-calendar"></i> Next Meeting</h2>
 				<?php

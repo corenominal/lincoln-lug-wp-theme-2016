@@ -9,7 +9,6 @@ function llug_enqueue_scripts()
      */
     wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/vendor/font-awesome-4.5.0/css/font-awesome.min.css', false );
     wp_enqueue_style( 'grid12', get_template_directory_uri() . '/css/vendor/grid12.css', false );
-    wp_enqueue_style( 'llug_utils_css', get_template_directory_uri() . '/css/llug-utils.css', false );
     wp_enqueue_style( 'llug_css', get_template_directory_uri() . '/css/llug.css', false );
     
     /**
