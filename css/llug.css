@@ -44,3 +44,88 @@ em {
 img {
 	max-width: 100%;
 }
+
+/**
+ * The coloured stuff
+ */
+.container-dark.container-top {
+	padding-top: 80px;
+}
+
+.container-dark,
+.container-light {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.container-dark {
+	color: #fff;
+	background: #111414;
+}
+
+.container-dark a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+.container-dark a:hover {
+	color: #111414;
+	background: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+.container-light {
+	color: #111414;
+	background: #ffeb3b;
+}
+
+.container-light a {
+	color: #111414;
+	text-decoration: none;
+	border-bottom: 1px solid #111414;
+}
+
+.container-light a:hover {
+	color: #ffeb3b;
+	background: #111414;
+	text-decoration: none;
+	border-bottom: 1px solid #ffeb3b;
+}
+
+.container-light a {
+	color: #111414;
+	text-decoration: none;
+	border-bottom: 1px solid #111414;
+}
+
+a.attachment {
+	border: none;
+}
+
+a.attachment:hover {
+	border: none;
+	background: transparent;
+}
+
+/**
+ * Utilities
+ */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.noscroll {
+	height: 100%;
+	overflow: hidden;
+}

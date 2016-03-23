@@ -1,17 +1,13 @@
-.container-dark,
-.container-light {
-	padding-top: 40px;
-	padding-bottom: 40px;
+.social a {
+	color:#111414;
+	border:0;
+	font-size: 66px;
+	margin-right: 20px;
 }
-
-.container-dark {
-	color: #fff;
-	background: #111414;
-}
-
-.container-light {
-	color: #111414;
-	background: #ffeb3b;
+.social a:hover {
+	color:#111414;
+	background: transparent;
+	border:0;
 }
 
 .faqs {

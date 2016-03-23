@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<div class="container-dark">
+<div class="container-dark container-top">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
@@ -62,7 +62,7 @@ get_header();
 
 					<div class="col-md-5 col-md-offset-1">
 						<h2><i class="fa fa-map"></i> Location</h2>
-						<a href="https://maps.google.com/maps?q=<?php echo $meta['venue_address_postcode'] ?>" target="_blank">
+						<a class="attachment" href="https://maps.google.com/maps?q=<?php echo $meta['venue_address_postcode'] ?>" target="_blank">
 						<img src="https://maps.google.com/maps/api/staticmap?center=<?php echo $meta['venue_address_postcode'] ?>&zoom=12&size=600x300&maptype=roadmap&markers=color:ORANGE|label:A|<?php echo $meta['venue_address_postcode'] ?>&scale=2&sensor=false " alt="Lincoln LUG meeting location">
 						</a>
 					</div>
@@ -80,10 +80,30 @@ get_header();
 <div class="container-dark">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<?php
 				// IRC info
 				iewp_content_snippet( 14 );
+				?>
+			</div>
+
+			<div class="col-md-6">
+				<?php
+				// Mailing List
+				iewp_content_snippet( 74 );
+				?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<?php
+				// Social info
+				iewp_content_snippet( 76 );
 				?>
 			</div>
 
@@ -97,7 +117,7 @@ get_header();
 	</div>
 </div>
 
-<div class="container-light">
+<div class="container-dark">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
