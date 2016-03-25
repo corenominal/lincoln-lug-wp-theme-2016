@@ -5,9 +5,10 @@ get_header();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<?php
-				// LOGO
-				?>
+				<h1>
+					<img src="<?php echo get_template_directory_uri() ?>/img/lincoln-lug-logo.svg" alt="Lincoln LUG">
+					<span class="sr-only">Lincoln Linux User Group</span>
+				</h1>
 			</div>
 
 			<div class="col-md-7 col-md-offset-1">
