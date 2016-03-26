@@ -49,6 +49,7 @@ img {
  * The coloured stuff
  */
 .container-dark.container-top {
+	background:#111414 url('img/header.png') repeat;
 	padding-top: 80px;
 }
 
