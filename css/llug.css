@@ -67,14 +67,14 @@ img {
 .container-dark a {
 	color: #fff;
 	text-decoration: none;
-	border-bottom: 1px solid #fff;
+	border-bottom: 2px solid #fff;
 }
 
 .container-dark a:hover {
 	color: #111414;
 	background: #fff;
 	text-decoration: none;
-	border-bottom: 1px solid #fff;
+	border-bottom: 2px solid #fff;
 }
 
 .container-light {
@@ -85,20 +85,14 @@ img {
 .container-light a {
 	color: #111414;
 	text-decoration: none;
-	border-bottom: 1px solid #111414;
+	border-bottom: 2px solid #111414;
 }
 
 .container-light a:hover {
 	color: #ffeb3b;
 	background: #111414;
 	text-decoration: none;
-	border-bottom: 1px solid #ffeb3b;
-}
-
-.container-light a {
-	color: #111414;
-	text-decoration: none;
-	border-bottom: 1px solid #111414;
+	border-bottom: 2px solid #ffeb3b;
 }
 
 a.attachment {

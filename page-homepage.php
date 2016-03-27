@@ -42,7 +42,7 @@ get_header();
 						<?php
 						// Post meta
 						$meta = iewp_lug_meeting_get_post_meta( $post->ID );
-						echo '<h2>' . date( 'l jS F G:i', $meta['startdate_timestamp'] ) . '</h2>';
+						echo '<h2><a href="' . get_the_permalink() . '">' . date( 'l jS F G:i', $meta['startdate_timestamp'] ) . '</a></h2>';
 						the_content();
 						echo '<p><strong>Venue:</strong><br>';
 						if( $meta['venue_website'] != '' )
