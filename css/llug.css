@@ -95,10 +95,12 @@ img {
 	border-bottom: 2px solid #ffeb3b;
 }
 
+a.logo,
 a.attachment {
 	border: none;
 }
 
+a.logo:hover,
 a.attachment:hover {
 	border: none;
 	background: transparent;
