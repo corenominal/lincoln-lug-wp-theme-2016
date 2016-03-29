@@ -7,7 +7,7 @@ require get_template_directory() . '/functions/theme_support.php';
 /**
  * Enqueue scripts
  */
-require get_template_directory() . '/functions/enqueue_scripts.php';
+require get_template_directory() . '/functions/enqueue_scripts_and_styles.php';
 
 /**
  * Widgets

@@ -2,7 +2,7 @@
 /**
  * Enqueue CSS and JS
  */
-function llug_enqueue_scripts()
+function llug_enqueue_scripts_and_styles()
 { 
     /**
      * Default Styles
@@ -28,4 +28,4 @@ function llug_enqueue_scripts()
     }
 
 }
-add_action( 'wp_enqueue_scripts', 'llug_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'llug_enqueue_scripts_and_styles' );
