@@ -27,5 +27,10 @@ function llug_enqueue_scripts_and_styles()
         wp_enqueue_style( 'llug_homepage', get_template_directory_uri() . '/css/homepage.css', false );
     }
 
+    if ( is_singular( 'lug_meeting' ) )
+    {
+        wp_enqueue_style( 'llug_meeting', get_template_directory_uri() . '/css/lug_meeting.css', false );
+    }
+
 }
 add_action( 'wp_enqueue_scripts', 'llug_enqueue_scripts_and_styles' );
