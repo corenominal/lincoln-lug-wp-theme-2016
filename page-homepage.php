@@ -42,7 +42,7 @@ get_header();
 						<?php
 						// Post meta
 						$meta = iewp_lug_meeting_get_post_meta( $post->ID );
-						echo '<h2><a href="' . get_the_permalink() . '">' . date( 'l jS F G:i', $meta['startdate_timestamp'] ) . '</a></h2>';
+						echo '<h2><a href="' . get_the_permalink() . '">' . date( 'l jS F g:i A', $meta['startdate_timestamp'] ) . '</a></h2>';
 						the_content();
 						echo '<p><strong>Venue:</strong><br>';
 						if( $meta['venue_website'] != '' )
@@ -101,42 +101,24 @@ get_header();
 <div class="container-light">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<?php
-				// Social info
-				iewp_content_snippet( 76 );
-				?>
-			</div>
-
-			<div class="col-md-7 col-md-offset-1">
+			<div class="col-md-7">
 				<?php
 				// FAQs
 				iewp_content_snippet( 16 );
 				?>
 			</div>
-		</div>
-	</div>
-</div>
 
-<div class="container-dark">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-4 col-md-offset-1">
 				<?php
-				// Social code
+				// Social info
+				iewp_content_snippet( 76 );
 				iewp_content_snippet( 18 );
 				?>
 			</div>
-
-			<div class="col-md-6">
-				<?php
-				// Copyleft
-				iewp_content_snippet( 19 );
-				?>
-			</div>
 		</div>
 	</div>
 </div>
+
 <?php
 get_footer();
 ?>

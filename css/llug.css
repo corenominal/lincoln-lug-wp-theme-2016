@@ -2,6 +2,7 @@
  * The Basics
  */
 body {
+	background:#111414;
 	font-size: 130%;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -93,6 +94,14 @@ img {
 	background: #111414;
 	text-decoration: none;
 	border-bottom: 2px solid #ffeb3b;
+}
+
+footer {
+	font-size: 80%;
+}
+
+footer div {
+	padding: 40px 0;
 }
 
 a.logo,

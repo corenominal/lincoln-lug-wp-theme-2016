@@ -1,6 +1,7 @@
 <?php
 get_header();
 the_post();
+$meta = iewp_lug_meeting_get_post_meta( $post->ID );
 ?>
 <div class="container-dark container-top">
 	<div class="container">
@@ -12,13 +13,17 @@ the_post();
 				</h1>
 			</div>
 
-			<div class="col-md-7 col-md-offset-1">
+			<div class="col-md-7 col-md-offset-1 event">
 				<h2><?php the_title() ?></h2>
+				<h3>Date: <?php echo date( 'l jS F g:i A', $meta['startdate_timestamp'] ) ?></h3>
 				<?php the_content() ?>
+				<?php
+				// Structured data
+				echo iewp_lug_meeting_structured_data( $post->ID );
+				?>
 			</div>
 		</div>
 	</div>
 </div>
-
 <?php
 get_footer();
