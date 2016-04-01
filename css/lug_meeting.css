@@ -1,15 +1,17 @@
-body {
-	
-}
 .container-dark.container-top {
 	background: #111414;
 }
 
-.event h2 {
+.event h1 {
 	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 
 .event h3 {
 	font-size: 100%;
 	margin-bottom: 20px;
+}
+
+.location {
+	margin-top: 60px;
 }

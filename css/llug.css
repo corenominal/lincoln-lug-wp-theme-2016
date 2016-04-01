@@ -3,7 +3,7 @@
  */
 body {
 	background:#111414;
-	font-size: 130%;
+	font-size: 96%;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -104,6 +104,11 @@ footer div {
 	padding: 40px 0;
 }
 
+.container-logo {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
 a.logo,
 a.attachment {
 	border: none;
@@ -134,4 +139,23 @@ a.attachment:hover {
 .noscroll {
 	height: 100%;
 	overflow: hidden;
+}
+
+@media only screen and (min-width: 767px) {
+	body {
+		font-size: 106%;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	body {
+		font-size: 130%;
+	}
+	.container-logo {
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 1210px) {
+
 }
