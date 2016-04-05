@@ -15,3 +15,11 @@
 .location {
 	margin-top: 60px;
 }
+
+.return-home {
+	margin-top: 40px;
+}
+
+.return-home a {
+	border-bottom: 2px transparent solid;
+}

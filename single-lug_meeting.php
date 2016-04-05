@@ -9,6 +9,7 @@ $meta = iewp_lug_meeting_get_post_meta( $post->ID );
 			<div class="col-md-3 container-logo">
 				<a class="logo" href="<?php echo site_url() ?>"><img src="<?php echo get_template_directory_uri() ?>/img/lincoln-lug-logo.svg" alt="Lincoln LUG">
 				<span class="sr-only">Lincoln Linux User Group</span></a>
+				<div class="return-home hidden-xs hidden-sm"><i class="fa fa-chevron-left"></i> <a href="<?php echo site_url() ?>"> LUG homepage</a></div>
 			</div>
 
 			<div class="col-md-8 col-md-offset-1 event">
