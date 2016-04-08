@@ -2,7 +2,7 @@
 
 A WordPress theme for the Lincoln LUG website. LUG members are welcome to submit pull requests. You can visit our website here: [lincolnlug.org.uk](http://lincolnlug.org.uk/)
 
-![Screenshot of Lincoln LUG website.](https://corenominal.org/wp-content/uploads/2016/01/lincoln-lug-website.png)
+![Screenshot of Lincoln LUG website.](https://corenominal.org/wp-content/uploads/2016/04/Lincoln_LUG_-_The_Lincoln_Linux_User_Group.png)
 
 ## About Lincoln LUG
 
