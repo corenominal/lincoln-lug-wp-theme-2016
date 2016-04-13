@@ -10,7 +10,7 @@ get_header();
 			</div>
 
 			<div class="col-md-8 col-md-offset-1">
-				<h1><i class="fa fa-exclamation-triangle"></i> 404 Page Not Found</h1>
+				<h1>404 Page Not Found</h1>
 				<p>Oops! The page you were looking for could not be found.<br><a href="<?php echo site_url(); ?>">Click here to visit our homepage</a>.</p>
 			</div>
 		</div>
