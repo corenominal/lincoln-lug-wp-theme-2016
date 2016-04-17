@@ -39,6 +39,13 @@ $meta = iewp_lug_meeting_get_post_meta( $post->ID );
 				// Structured data
 				echo iewp_lug_meeting_structured_data( $post->ID );
 				?>
+
+				<div class="discuss">
+					<?php
+					// About Lincoln LUG
+					iewp_content_snippet( 'LUG Meeting - Discuss' );
+					?>
+				</div>
 			</div>
 		</div>
 	</div>
