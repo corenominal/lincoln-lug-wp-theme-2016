@@ -50,8 +50,7 @@ img {
  * The coloured stuff
  */
 .container-dark.container-top {
-	background:#111414 url('img/header.png') repeat;
-	padding-top: 80px;
+	padding-top: 0px;
 }
 
 .container-dark,
@@ -105,8 +104,10 @@ footer div {
 }
 
 .container-logo {
-	margin-bottom: 20px;
-	text-align: center;
+	padding: 20px 0 0 0;
+	margin-bottom: 40px;
+	/*text-align: center;*/
+	background: #ffeb3b;
 }
 
 a.logo,
@@ -145,6 +146,9 @@ a.attachment:hover {
 	body {
 		font-size: 106%;
 	}
+	.container-dark.container-top {
+		padding-top: 40px;
+	}
 }
 
 @media only screen and (min-width: 991px) {
@@ -153,9 +157,17 @@ a.attachment:hover {
 	}
 	.container-logo {
 		text-align: left;
+		padding: 0;
+		background: transparent;
+	}
+	.container-dark.container-top {
+		background:#111414 url('img/header.png') repeat;
+		padding-top: 80px;
 	}
 }
 
 @media only screen and (min-width: 1210px) {
-
+	.container-dark.container-top {
+		padding-top: 80px;
+	}
 }
