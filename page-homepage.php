@@ -24,8 +24,8 @@ get_header();
 		<?php
 		// Show latest meeting
 		$args = array (
-			'post_type'              => array( 'lug_meeting' ),
-			'post_status'            => array( 'published' ),
+			'post_type'              => 'lug_meeting',
+			'post_status'            => 'publish',
 			'posts_per_page'		 => 1, 
 		);
 		$query = new WP_Query( $args );
