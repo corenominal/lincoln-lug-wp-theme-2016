@@ -32,9 +32,10 @@ $meta = iewp_lug_meeting_get_post_meta( $post->ID );
 				echo $meta['venue_address_postcode'];
 				?>
 				</p>
-				<a class="attachment" href="https://maps.google.com/maps?q=<?php echo $meta['venue_address_postcode'] ?>" target="_blank">
-				<img src="https://maps.google.com/maps/api/staticmap?center=<?php echo $meta['venue_address_postcode'] ?>&zoom=12&size=600x300&maptype=roadmap&markers=color:ORANGE|label:A|<?php echo $meta['venue_address_postcode'] ?>&scale=2&sensor=false " alt="Lincoln LUG meeting location">
-				</a>
+
+
+				<iframe class="osm" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.5268287658691407%2C53.214976500692416%2C-0.5062937736511232%2C53.22497198114268&amp;layer=mapnik&amp;marker=53.2199745324946%2C-0.5165612697601318" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=53.2200&amp;mlon=-0.5166#map=16/53.2200/-0.5166">View Larger Map</a></small>
+
 				<?php
 				// Structured data
 				echo iewp_lug_meeting_structured_data( $post->ID );

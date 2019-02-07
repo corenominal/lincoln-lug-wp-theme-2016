@@ -121,6 +121,10 @@ a.attachment:hover {
 	background: transparent;
 }
 
+.osm {
+	width: 100%;
+}
+
 /**
  * Utilities
  */
